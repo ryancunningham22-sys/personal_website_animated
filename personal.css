@@ -1,0 +1,10 @@
+:root{--maroon:#500000}
+.personal-float{position:absolute;width:clamp(130px,13vw,245px);height:auto;pointer-events:none;transform:translate(-50%,-50%);animation:personal-float 8s ease-in-out infinite;filter:drop-shadow(0 20px 25px #56304b18)}
+.personal-float:nth-of-type(2n){animation-duration:10s;animation-delay:-3s}
+@keyframes personal-float{0%,100%{transform:translate(-50%,-50%) rotate(-6deg)}50%{transform:translate(-50%,calc(-50% - 15px)) rotate(5deg)}}
+body.motion-paused .personal-float,body.page-hidden .personal-float{animation-play-state:paused}
+.personal-interests{margin-top:30px;padding-top:22px;border-top:1px solid #ffffff85}.personal-interests p{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#633f54;font-weight:600}.personal-interests ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:13px 0 0}.personal-interests li{border:1px solid #74294e25;background:#fff5f650;padding:8px 12px;border-radius:20px;font-size:11px;color:#500000}
+.brand-dot{color:#500000}.hero-portrait img{border-bottom:5px solid #500000}.stop-number{border-left:3px solid #74294e80}.section-copy{background:linear-gradient(130deg,#ffffff70,#f8effb38)}
+@media(max-width:760px){.personal-float{width:145px}.section-copy{background:linear-gradient(135deg,#ffffff95,#f4f0ff65)}}
+@media(prefers-reduced-motion:reduce){.personal-float{animation:none}}
+h1 em{font-family:Arial,Helvetica,sans-serif;font-style:normal;font-weight:600;letter-spacing:-.055em}.personal-float[src*="basketball.png"]{width:clamp(195px,19vw,365px)}
